@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="http://localhost:5000/updateConfirm" method="post">
+            <p>Update todo :</p>
+            <p><input type="hidden" name="id" value="{{result.get('_id')}}"/></p>
+            <p><input type="text" name="title" value="{{result.get('title')}}"/></p>
+            <p><input type="text" name="details" value="{{result.get('details')}}"/></p>
+            <p><input type="submit" value="submit" /></p>
+        </form>
+        <h3><a href="http://localhost:5000/home">Back to home</a></h3>
+    </div>
+</body>
+
+</html>
